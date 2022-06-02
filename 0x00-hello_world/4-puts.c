@@ -1,12 +1,11 @@
+/**
+ *main-entry point
+ *
+ *return - always 0 success
+ */
 #include <stdio.h>
-int main(void)
-/*
-*4-puts function
- *a print substitue that does what print does
- *this code prints the contents enclosed in th ""
-*/
+int main(void)/*main entry point for the ccode*/
 {
 puts("\"Programming is like building a multilingual puzzle");
-/* this is the code that prints the string*/
-return (0);
+return (0);/*return 0 if code is successful*/
 }
