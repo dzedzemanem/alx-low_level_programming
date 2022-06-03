@@ -1,8 +1,8 @@
+#include <stdio.h>
 /**
  *main-Entry point
  *Return:Always 0 (success)
  */
-#include <stdio.h>
 int main(void)
 {
 char acharacter;
@@ -15,5 +15,5 @@ printf("Size of int: %zu bytes\n", sizeof(ainteger));
 printf("Size of long: %zu bytes\n", sizeof(along));
 printf("Size of alonglong: %zu bytes\n", sizeof(alonglong));
 printf("Size of float: %zu bytes\n", sizeof(afloat));
-return (0); 
+return (0);
 }
