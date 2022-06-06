@@ -13,7 +13,7 @@ for (ltr = 'a'; ltr <= 'z'; ltr++)
 {
 putchar(ltr);
 }
-for (caps = 'A'; caps <= 'Z'; caps++) 
+for (caps = 'A'; caps <= 'Z'; caps++)
 {
 putchar(caps);
 }
