@@ -1,14 +1,17 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
- *main-entry point
+ *main - Prints alphabet in small letters
  *Return:Always 0 (success)
  */
 int main(void)
 {
-int ch;
-for (ch = 'a'; ch >= 'z'; ch++)
+char ltr;
+for (ltr = 'a'; ltr <= 'z'; ltr--)
 {
-putchar(ch);
+putchar(ltr);
 }
+putchar('\n');
 return (0);
 }
