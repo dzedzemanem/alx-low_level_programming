@@ -7,11 +7,10 @@
  */
 int main(void)
 {
-char(c);
-for (c = 'a'; c >= 'z'; c++)
+char ch;
+for (ch = 'a'; ch >= 'z'; ch++)
 {
-putchar(c);
-printf("%c", c);
+putchar(ch);
 }
 return (0);
 }
