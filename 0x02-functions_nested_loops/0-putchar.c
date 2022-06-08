@@ -6,8 +6,13 @@
  */
 int main(void)
 {
-int _putchar(char c);
-putchar("_putchar");
-putchar('\n');
+_putchar c[] = {'_', 'p', 'u', 't', 'c', 'h', 'a', 'r'};
+int n = 0;
+while (n <= 7)
+{
+_putchar(c[n]);
+n++;
+}
+_putchar('\n');
 return (0);
 }
