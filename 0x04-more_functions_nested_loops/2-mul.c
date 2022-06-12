@@ -6,5 +6,5 @@
  */
 int mul(int a, int b);
 {
-return (c >= 48 && c <= 57);
+return (a * b);
 }
