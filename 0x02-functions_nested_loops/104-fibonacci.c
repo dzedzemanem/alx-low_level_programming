@@ -19,7 +19,8 @@ for (i = 1; i < 91; i++)
 {
 printf(", %lu", b);
 b += a;
-a = b - a;}
+a = b - a;
+}
 c = (a / m);
 d = (a % m);
 c = (b / m);
