@@ -1,10 +1,14 @@
 #include "main.h"
+
 /**
- * mul - multiply 2 digits
- * @c : multiply characters
- * Return:0 or 1
+ * mul - Multiply two integers
+ * @a: The first number
+ * @b: The second number
+ *
+ * Return: The result
  */
-int mul(int a, int b);
+
+int mul(int a, int b)
 {
 return (a * b);
 }
