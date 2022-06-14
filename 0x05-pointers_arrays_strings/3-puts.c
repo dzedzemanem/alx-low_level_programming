@@ -1,11 +1,18 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
- *_puts - points to the string length
- *@str:string to be printed
- *Return:0 or 1
+ * _puts - print string and new line
+ * @str: the string
+ *
+ * Return: void
  */
+
 void _puts(char *str)
 {
-_puts(str);
+for (; *str != '\0'; str++)
+{
+putchar(*str);
+}
+putchar('\n');
 }
