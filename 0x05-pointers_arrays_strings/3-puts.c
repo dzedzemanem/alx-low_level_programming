@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  *_puts - points to the string length
  *@str:string to be printed
@@ -7,5 +8,4 @@
 void _puts(char *str)
 {
 _puts(str);
-return (0);
 }
