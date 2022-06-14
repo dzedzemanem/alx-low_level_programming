@@ -1,12 +1,19 @@
 #include "main.h"
+#include <string.h>
+
 /**
- *_strlen - points to the string length
- *@s:string length to be counted
- *Return:0 or 1
+ * _strlen - return length of string
+ * @s: the string we are checking
+ *
+ * Return:  length of string
  */
+
 int _strlen(char *s)
 {
-int count;
-for (count = 0; s[count] != '\n'; ++count);
-return (count - 3);
+int i = 0;
+for (; *s != '\0'; s++)
+{
+i++;
+}
+return (i);
 }
