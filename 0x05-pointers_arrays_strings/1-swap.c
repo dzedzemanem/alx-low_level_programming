@@ -4,8 +4,8 @@
  *@a , @b : swap values of the 2
  * Return:0 or 1
  */
-void swap_int(int *a, int *b);
+void swap_int(int *a, int *b)
 {
-*a = %b;
-*b = %a; 
+a = b;
+b = a; 
 }
