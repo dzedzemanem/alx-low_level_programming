@@ -19,4 +19,4 @@ for (i -= 1; i >= 0; i--)
 putchar(s[i]);
 }
 putchar('\n');
-#include "main.h"
+}
