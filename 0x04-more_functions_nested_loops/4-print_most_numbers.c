@@ -1,12 +1,10 @@
 #include "main.h"
-
 /**
  * print_most_numbers - print the numberes from zero to nine
  * exlcuding two and four
  *
  * Return: the numbers from zero to nine only
  */
-
 void print_most_numbers(void)
 {
 int n = 0;
