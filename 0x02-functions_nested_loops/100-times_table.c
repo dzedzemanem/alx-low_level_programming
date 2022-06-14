@@ -33,7 +33,7 @@ _putchar(' ');
 _putchar(' ');
 _putchar(z + '0');
 }
- else
+else
 _putchar(z + '0');
 if (y != n)
 {
