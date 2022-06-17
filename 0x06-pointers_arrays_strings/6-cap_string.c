@@ -1,37 +1,41 @@
 #include "main.h"
 #include <string.h>
-/**
- * cap_string - capitalizes all words of a string.
- * @s: string.
- * Return: string.
- */
-char *cap_string(char *s)
-{
-  int i;
 
-  i = 0;
-  while (s[i] != '\0')
+/**
+ * cap_string - capitalizes all words of a string
+ * @str: the string
+ *
+ * Return: str
+ */
+
+char *cap_string(char *str)
+{
+  int i, c;
+  int trigger;
+  char sep[] = ",\t;\n; .!?\"(){}";
+
+  for (i = 0, trigger = 0; str[i] != '\0'; i++)
     {
-      if ((s[i - 1] == ' ' || s[i - 1] == '\n'
-	   || s[i - 1] == '\t' || s[i - 1] == ','
-	   || s[i - 1] == ';' || s[i - 1] == '!'
-	   || s[i - 1] == '?' || s[i - 1] == '"'
-	   || s[i - 1] == '(' || s[i - 1] == ')'
-	   || s[i - 1] == '{' || s[i - 1] == '}'
-	   || s[i - 1] == '.')
-	  && (s[i] >= 'a' && s[i] <= 'z'))
+      if (str[0] > 96 && str[0] < 123)
+	trigger = 1;
+      for (c = 0; sep[c] != '\0'; c++)
 	{
-	  s[i] = s[i] - 32;
+	  if (sep[c] == str[i])
+	    trigger = 1;
 	}
-      else if ((s[0] >= 97 && s[0] <= 122))
+
+      if (trigger)
 	{
-	  s[0] = s[0] - 32;
+	  if (str[i] > 96 && str[i] < 123)
+	    {
+	      str[i] -= 32;
+	      trigger = 0;
+	    }
+	  else if (str[i] > 64 && str[i] < 91)
+	    trigger = 0;
+	  else if (str[i] > 47 && str[i] < 58)
+	    trigger = 0;
 	}
-      else
-	{
-	  s[i] = s[i];
-	}
-      i++;
     }
-  return (s);
+  return (str);
 }
